@@ -1,6 +1,7 @@
 package com.singtel.main;
 
 import com.singtel.bo.Bird;
+import com.singtel.bo.ButterFly;
 import com.singtel.bo.Chicken;
 import com.singtel.bo.Duck;
 import com.singtel.bo.Fish;
@@ -12,9 +13,8 @@ public class Solution {
 		/*RoosterDecorator rooster = new RoosterDecorator();
 		rooster.doSpeak();*/
 		
-		Fish fish = new Fish();
-		fish.sing();
-		fish.walk();
-		fish.swim();
+		ButterFly butterFly = new ButterFly();
+		butterFly.fly();
+		butterFly.sound();
 	}
 }
