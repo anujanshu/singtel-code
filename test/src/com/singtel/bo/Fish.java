@@ -9,7 +9,10 @@ import com.singtel.impl.NoWalkBehaviour;
 import com.singtel.impl.SwimBeaviourImpl;
 
 public class Fish extends Animal{
-
+	
+	String size;
+	String color;
+	
 	ISwimBehaviour iSwimBehaviour;
 	IWalk walkBehaviour;
 	ISing singBehaviour;
@@ -31,5 +34,26 @@ public class Fish extends Animal{
 	}
 	public void swim() {
 		iSwimBehaviour.swim();
+	}
+
+	public String getSize() {
+		return size;
+	}
+
+	public void setSize(String size) {
+		this.size = size;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	public void display() {
+		System.out.println("Size:" + size);
+		System.out.println("Colour:" + color);
 	}
 }
